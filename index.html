@@ -30,7 +30,6 @@
             min-height: 100%;
             background: url('assets/img/DALL·E%202024-08-25%2016.58.21%20-%20Create%20a%201920x1080%20image%20suitable%20for%20an%20Indian%20wedding%20invitation,%20incorporating%20similar%20elements%20from%20the%20uploaded%20image.%20The%20image%20should%20feature%20a.webp') no-repeat center center fixed;
             background-size: cover;
-            opacity: 0.5;
         }
 
         .wrap {
@@ -42,6 +41,7 @@
             padding: 20px;
             z-index: 1;
             min-height: 100vh; /* Ensure it takes full viewport height */
+            position: relative; /* Ensure content stays above background */
         }
 
         .title h1 {
@@ -123,6 +123,11 @@
             text-align: center;
             font-size: 16px;
             margin: 20px 0;
+        }
+
+        .actions .venue {
+            font-size: 18px; /* Adjust size of "SEE THE VENUE" */
+            padding: 12px 24px; /* Adjust padding for better size */
         }
     </style>
 </head>
