@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, Helvetica, Sans-serif;
   background: linear-gradient(
@@ -5,22 +6,21 @@ body {
     rgb(39, 152, 208),
     rgb(248, 197, 197),
     rgb(151, 206, 226)
-  );
+  ),
+  url('assets/img/WhatsApp_Image_2024-08-23.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 900px) {
-  .imgi {
-    max-width: 30%;
-  }
-  .top-right-decoration {
-    max-width: 30%;
-  }
-  .top-left-decoration {
+  .imgi, .top-right-decoration, .top-left-decoration {
     max-width: 30%;
   }
 }
@@ -42,7 +42,6 @@ img {
 .title h1 {
   font-family: "Dancing Script", cursive;
   font-weight: bold;
-  font-style: normal;
   font-size: 65px;
   margin: 30px 0;
   color: #da400d;
@@ -53,9 +52,6 @@ img {
 .title h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-style: 800;
-  margin: 0;
-  padding: 0;
   font-size: 24px;
   color: #da400d;
   line-height: 1;
@@ -65,7 +61,6 @@ img {
 .dance-med {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
-  font-style: normal;
   font-size: 32px;
   color: #fc1717;
   margin: 16px;
@@ -98,8 +93,7 @@ img {
   text-align: center;
 }
 
-/** **/
-
+/* Additional Styles */
 * {
   font-family: "Arvo", serif;
 }
@@ -179,13 +173,7 @@ body {
   text-shadow: 0 0 10px rgb(255, 253, 253);
 }
 
-.date {
-  color: rgb(13, 13, 14);
-  font-weight: 900;
-  text-shadow: 0 0 10px rgb(255, 253, 253);
-}
-
-.place {
+.date, .place {
   color: rgb(13, 13, 14);
   font-weight: 900;
   text-shadow: 0 0 10px rgb(255, 253, 253);
@@ -209,9 +197,8 @@ body {
   padding: 12px;
   background: linear-gradient(90deg, #b33a46, #9b313c);
   border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
   font-size: 24px;
+  color: #fff;
 }
 
 a {
@@ -303,6 +290,7 @@ a {
   overflow: hidden;
   scroll-behavior: smooth;
 }
+
 .wrapper section {
   width: 100%;
   position: relative;
@@ -310,14 +298,17 @@ a {
   grid-template-columns: repeat(5, auto);
   margin: 20px 0;
 }
+
 .wrapper section .item {
   padding: 0 2px;
   transition: 250ms all ease;
 }
+
 .wrapper section .item:hover {
   margin: 0 40px;
   transform: scale(1.8);
 }
+
 .wrapper section a {
   position: absolute;
   color: #fff;
@@ -329,12 +320,14 @@ a {
   text-align: center;
   z-index: 1;
 }
+
 .wrapper section a:nth-of-type(1) {
   top: 0;
   bottom: 0;
   left: 0;
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
 }
+
 .wrapper section a:nth-of-type(2) {
   top: 0;
   bottom: 0;
@@ -346,6 +339,7 @@ a {
   a.arrow__btn {
     display: none;
   }
+
   .wrapper {
     display: none;
   }
@@ -374,6 +368,7 @@ blockquote {
   max-width: 35em;
   font-size: 15px;
 }
+
 blockquote::before {
   content: "“";
   font-family: serif;
@@ -387,31 +382,14 @@ blockquote::before {
 
 .cite__container {
   margin-top: 0.75em;
-  padding: 0.25em;
-  padding-right: 0.25em;
-  text-align: right;
-  font-weight: 400;
+  padding: 0.5em;
+}
+
+.cite__container .cite {
+  margin-left: 0;
+  font-weight: 600;
+}
+
+.cite__container .cite .author {
   color: #373a63;
-}
-
-.dance {
-  font-family: "Dancing Script", cursive;
-  font-weight: bolder;
-  font-style: normal;
-  font-size: 32px;
-  color: #fc1717;
-  margin: 16px;
-  text-align: center;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body {
-  font-family: Arial, Helvetica, Sans-serif;
-  background: url('assets/img/WhatsApp Image 2024-08-23 at 17.02.30_5670a5ec.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
