@@ -21,7 +21,7 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, Sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
@@ -42,25 +42,26 @@
             z-index: 1;
             min-height: 100vh; /* Ensure it takes full viewport height */
             position: relative; /* Ensure content stays above background */
+            color: #ffffff; /* Ensure text is visible */
         }
 
         .title h1 {
             font-family: "Dancing Script", cursive;
             font-weight: bold;
-            font-size: 65px;
-            margin: 20px 0; /* Adjust margin */
+            font-size: 48px; /* Adjusted for better visibility */
+            margin: 10px 0; /* Adjust margin */
             color: #da400d;
             padding: 10px;
-            text-shadow: 0 0 10px rgb(255, 255, 255);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
         }
 
         .title h2 {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 28px; /* Adjusted for better visibility */
             color: #da400d;
             line-height: 1;
-            text-shadow: 0 0 10px rgb(255, 255, 255);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
         }
 
         .title h3 {
@@ -70,11 +71,11 @@
             font-size: 24px;
             color: #ffffff;
             margin-top: 5px;
-            text-shadow: 0 0 10px rgb(7, 7, 7);
+            text-shadow: 0 0 10px rgba(7, 7, 7, 0.8); /* Better visibility on background */
         }
 
         .title p {
-            color: #564861;
+            color: #ffffff; /* Ensure text is visible */
             margin: 20px 0; /* Adjust margin */
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -88,9 +89,10 @@
             border-radius: 16px;
             text-align: center;
             color: #054da4;
-            padding: 8px;
+            padding: 12px 24px; /* Adjust padding for better size */
             margin: 8px;
             font-weight: 800;
+            font-size: 18px; /* Adjust size */
         }
 
         .happiness {
@@ -99,11 +101,11 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 10px;
-            text-shadow: 0 0 10px rgb(255, 255, 255);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
         }
 
         .footer {
-            color: #564861;
+            color: #ffffff; /* Ensure text is visible */
             text-align: center;
             font-size: 16px;
             margin: 20px;
@@ -128,6 +130,11 @@
         .actions .venue {
             font-size: 18px; /* Adjust size of "SEE THE VENUE" */
             padding: 12px 24px; /* Adjust padding for better size */
+        }
+
+        .save-the-date-icon {
+            width: 50px; /* Adjust width to half */
+            height: 50px; /* Adjust height to half */
         }
     </style>
 </head>
