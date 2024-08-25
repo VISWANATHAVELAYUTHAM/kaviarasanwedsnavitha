@@ -17,17 +17,21 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            font-family: Arial, Helvetica, Sans-serif;
-            position: relative;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            font-family: Arial, Helvetica, Sans-serif;
+        }
+
+        body {
+            position: relative;
+            min-height: 100%;
         }
 
         body:before {
             content: "";
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
@@ -44,7 +48,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            position: relative;
+            padding: 20px;
             z-index: 1;
         }
 
