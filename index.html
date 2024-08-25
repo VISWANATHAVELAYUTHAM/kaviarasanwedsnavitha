@@ -19,8 +19,23 @@
     <style>
         body {
             font-family: Arial, Helvetica, Sans-serif;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: url('assets/img/DALL·E 2024-08-25 16.58.21 - Create a 1920x1080 image suitable for an Indian wedding invitation, incorporating similar elements from the uploaded image. The image should feature a.webp') no-repeat center center fixed;
-            background-size: contain;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
         }
 
         .wrap {
@@ -29,6 +44,8 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            position: relative;
+            z-index: 1;
         }
 
         .title h1 {
