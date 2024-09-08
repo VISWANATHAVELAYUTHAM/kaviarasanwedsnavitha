@@ -1,205 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="author" content="untoldcoding">
-    <meta name="email" content="vishaltewatiawork@gmail.com">
-    <meta name="copyright" content="untoldcoding 2024" />
-    <meta property="og:type" content="Wedding Website" >
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-    <title>Wedding Invitation | untoldcoding</title>
-    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="author" content="untoldcoding">
+  <meta name="email" content="vishaltewatiawork@gmail.com">
+  <meta name="copyright" content="untoldcoding 2024" />
+  <meta property="og:type" content="Wedding Website" >
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <title>Wedding Invitation | untoldcoding</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
 
-        body {
-            position: relative;
-            min-height: 100%;
-            background: url('assets/img/DALL·E%202024-08-25%2016.58.21%20-%20Create%20a%201920x1080%20image%20suitable%20for%20an%20Indian%20wedding%20invitation,%20incorporating%20similar%20elements%20from%20the%20uploaded%20image.%20The%20image%20should%20feature%20a.webp') no-repeat center center fixed;
-            background-size: cover;
-        }
+    body {
+      position: relative;
+      min-height: 100%;
+      background: url('assets/img/DALL·E%202024-08-25%2016.58.21%20-%20Create%20a%201920x1080%20image%20suitable%20for%20an%20Indian%20wedding%20invitation,%20incorporating%20similar%20elements%20from%20the%20uploaded%20image.%20The%20image%20should%20feature%20a.webp') no-repeat center center fixed;
+      background-size: cover;
+    }
 
-        .wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-            z-index: 1;
-            min-height: 100vh; /* Ensure it takes full viewport height */
-            position: relative; /* Ensure content stays above background */
-            color: #ffffff;
-        }
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      z-index: 1;
+      min-height: 100vh; /* Ensure it takes full viewport height */
+      position: relative; /* Ensure content stays above background */
+      color: #ffffff; /* Ensure text is visible */
+    }
 
-        .title h1, .title h2, .title h3 {
-            margin: 0; /* Remove unwanted margins */
-            padding: 0;
-        }
+    .title {
+      height: 200px; /* Added fixed height */
+      margin: 0 auto; /* Center the title horizontally */
+      padding: 20px; /* Adjust padding if needed */
+    }
 
-        .title h1 {
-            font-family: "Dancing Script", cursive;
-            font-weight: bold;
-            font-size: 48px; /* Adjusted for better visibility */
-            color: #da400d;
-            padding: 10px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
-        }
+    .title h1 {
+      font-family: "Dancing Script", cursive;
+      font-weight: bold;
+      font-size: 48px; /* Adjusted for better visibility */
+      margin: 5px 0; /* Adjust margin */
+      color: #da400d;
+      padding: 10px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
+    }
 
-        .title h2 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 28px; /* Adjusted for better visibility */
-            color: #da400d;
-            line-height: 1;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
-        }
+    .title h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 28px; /* Adjusted for better visibility */
+      color: #da400d;
+      line-height: 1;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
+    }
 
-        .title h3 {
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            font-size: 24px;
-            color: #ffffff;
-            margin-top: 5px;
-            text-shadow: 0 0 10px rgba(7, 7, 7, 0.8); /* Better visibility on background */
-        }
+    .title h3 {
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 24px;
+      color: #ffffff;
+      margin-top: 5px;
+      text-shadow: 0 0 10px rgba(7, 7, 7, 0.8); /* Better visibility on background */
+    }
 
-        .title p {
-            color: #ffffff;
-            margin: 20px 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 16px;
-        }
+    .title p {
+      color: #ffffff; /* Ensure text is visible */
+      margin: 20px 0; /* Adjust margin */
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 16px;
+    }
 
-        .venue {
-            width: auto;
-            height: auto;
-            background-color: #ffffff;
-            border-radius: 16px;
-            text-align: center;
-            color: #054da4;
-            padding: 12px 24px; /* Adjust padding for better size */
-            margin: 8px;
-            font-weight: 800;
-            font-size: 18px;
-        }
+    .venue {
+      width: auto;
+      height: auto;
+      background-color: #ffffff;
+      border-radius: 16px;
+      text-align: center;
+      color: #054da4;
+      padding: 12px 24px; /* Adjust padding for better size */
+      margin: 8px;
+      font-weight: 800;
+      font-size: 18px; /* Adjust size */
+    }
 
-        .happiness {
-            color: #fc0a0a;
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-        }
+    .happiness {
+      color: #fc0a0a;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
+    }
 
-        .footer {
-            color: #ffffff;
-            text-align: center;
-            font-size: 16px;
-            margin: 20px;
-        }
+    .footer {
+      color: #ffffff; /* Ensure text is visible */
+      text-align: center;
+      font-size: 16px;
+      margin: 20px;
+    }
 
-        .tile__img {
-            text-align: center;
-            margin: 20px 0;
-        }
+    .tile__img {
+      text-align: center;
+      margin: 20px 0;
+    }
 
-        .tile__img img {
-            max-width: 100%;
-            height: auto;
-        }
+    .tile__img img {
+      max-width: 100%; /* Ensure image scales with viewport */
+      height: auto;
+    }
 
-        .dance-med {
-            text-align: center;
-            font-size: 16px;
-            margin: 20px 0;
-        }
+    .dance-med {
+      text-align: center;
+      font-size: 16px;
+      margin: 20px 0;
+    }
 
-        .actions {
-            margin-top: 20px; /* Reduce space between content and the button */
-        }
+    .actions .venue {
+      font-size: 18px; /* Adjust size of "SEE THE VENUE" */
+      padding: 12px 24px; /* Adjust padding for better size */
+    }
 
-        .actions .venue {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin-bottom: 20px; /* Adjust margin */
-        }
-
-        .save-the-date-icon {
-            width: 50px;
-            height: 50px;
-        }
-    </style>
+    .save-the-date-icon {
+      width: 50px; /* Adjust width to half */
+      height: 50px; /* Adjust height to half */
+    }
+  </style>
 </head>
 <body>
-    <div class="untoldcoding-falling"></div>
-    <img src="https://i.postimg.cc/mDD9D8Zd/Untitled-design-1-removebg-preview.png" alt="image-top-right" class="top-right-decoration">
-    <img src="https://i.postimg.cc/P5X5TN5y/Untitled-design-removebg-preview-1.png" alt="image-top-left" class="top-left-decoration"> 
-    <section id="media"></section>
-    <div class="wrap">
-        <div class="title">
-            <h1>Kaviarasan</h1>
-            <h2>&</h2>
-            <h1>Navitha</h1>
-            <h3>Are getting married</h3>
-            <p>
-                on <span class="date">15 September 2024</span>, At <span class="place">Malar Mahal, Vadaseri Road, Mannargudi</span>.
-            </p>
-            <div class="body2">
-                <!-- SVG animations here -->
-            </div>
-        </div>
+  <div class="untoldcoding-falling"></div>
+  <img src="https://i.postimg.cc/mDD9D8Zd/Untitled-design-1-removebg-preview.png" alt="image-top-right" class="top-right-decoration">
+  <img src="https://i.postimg.cc/P5X5TN5y/Untitled-design-removebg-preview-1.png" alt="image-top-left" class="top-left-decoration"> 
+  <section id="media"></section>
+  <div class="wrap">
+    <div class="title">
+      <h1>Kaviarasan</h1>
+      <h2>&</h2>
+      <h1>Navitha</h1>
+      <h3>Are getting married</h3>
+      <p>
+        on <span class="date">15 September 2024</span>, At <span class="place">Malar Mahal, Vadaseri Road, Mannargudi</span>.
+      </p>
     </div>
-    <div class="actions">
-        <a href="https://www.google.com/maps?q=Malar+Mahal,+Vadaseri+Road,+Mannargudi" target="_blank">
-            <div class="venue">SEE THE VENUE</div>
-        </a>
-    </div>
-    <br>   
-    <div id="time"></div>
-    <p class="happiness">Join us in our happiness!<br><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></p>
-    <div class="tile__img">
-        <img class="tile__img" src="./assets/img/ggg.gif" alt="" />
-    </div>
-    <p class="dance-med">
-        dinner & dancing to follow
-    </p>
-    <div class="actions">
-        <a href="./assets/img/IMG-20240825-WA0023 (1).png" target="_blank">
-            <div class="venue">DOWNLOAD INVITATION CARD</div>
-        </a>
-    </div>
-    <p class="footer">
-        Can't wait to celebrate the auspicious moment of our family with you!<br>
-        <span><a href="https://api.whatsapp.com/send?phone=919729373708&utm_source=Messaging&utm_medium=Whatsapp" target="_blank" class="social-icon" title="WhatsApp">
-        <!-- WhatsApp SVG here -->
-        </a></span>
-    </p>
-
-    <!-- Force reload bypassing cache -->
-    <script>
-        if (window.performance) {
-            if (performance.navigation.type == 1) {
-                console.log("This page is reloaded");
-            }
-            window.location.reload(true); // Force reload
-        }
-    </script>
-</body>
-</html>
+    <div class="body2">
+      </div>
+  </div>
+  <div class="actions">
+    <a href="https://www.google.com/maps?q=Malar+Mahal,+Vadaseri+Road,+Mannargudi" target="_blank">
+      <div class="venue">SEE THE VENUE</div>
+    </a>
+  </div>
+  <br>   
+  <div id="time"></div>
+  <p class="happiness">Join us in our happiness!<br><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></p>
+  <div class="tile__img">
+    <img class="tile__img" src="./assets/img/ggg.gif" alt=""  />
+  </div>
