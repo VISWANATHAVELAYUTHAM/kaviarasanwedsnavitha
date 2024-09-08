@@ -42,18 +42,18 @@
             z-index: 1;
             min-height: 100vh; /* Ensure it takes full viewport height */
             position: relative; /* Ensure content stays above background */
-            color: #ffffff; /* Ensure text is visible */
+            color: #ffffff;
         }
 
-        .title {
-            margin-top: -50px; /* Pull the content down */
+        .title h1, .title h2, .title h3 {
+            margin: 0; /* Remove unwanted margins */
+            padding: 0;
         }
 
         .title h1 {
             font-family: "Dancing Script", cursive;
             font-weight: bold;
             font-size: 48px; /* Adjusted for better visibility */
-            margin: 0; /* Remove unwanted margin */
             color: #da400d;
             padding: 10px;
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
@@ -79,8 +79,8 @@
         }
 
         .title p {
-            color: #ffffff; /* Ensure text is visible */
-            margin: 20px 0; /* Adjust margin */
+            color: #ffffff;
+            margin: 20px 0;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-size: 16px;
@@ -96,12 +96,7 @@
             padding: 12px 24px; /* Adjust padding for better size */
             margin: 8px;
             font-weight: 800;
-            font-size: 18px; /* Adjust size */
-        }
-
-        /* Reduce the gap between sections */
-        .actions {
-            margin-top: -30px; /* Adjust margin to reduce empty gap */
+            font-size: 18px;
         }
 
         .happiness {
@@ -110,11 +105,11 @@
             font-weight: bold;
             text-align: center;
             margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Better visibility on background */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         }
 
         .footer {
-            color: #ffffff; /* Ensure text is visible */
+            color: #ffffff;
             text-align: center;
             font-size: 16px;
             margin: 20px;
@@ -126,7 +121,7 @@
         }
 
         .tile__img img {
-            max-width: 100%; /* Ensure image scales with viewport */
+            max-width: 100%;
             height: auto;
         }
 
@@ -136,14 +131,19 @@
             margin: 20px 0;
         }
 
+        .actions {
+            margin-top: 20px; /* Reduce space between content and the button */
+        }
+
         .actions .venue {
-            font-size: 18px; /* Adjust size of "SEE THE VENUE" */
-            padding: 12px 24px; /* Adjust padding for better size */
+            font-size: 18px;
+            padding: 10px 20px;
+            margin-bottom: 20px; /* Adjust margin */
         }
 
         .save-the-date-icon {
-            width: 50px; /* Adjust width to half */
-            height: 50px; /* Adjust height to half */
+            width: 50px;
+            height: 50px;
         }
     </style>
 </head>
@@ -175,7 +175,7 @@
     <div id="time"></div>
     <p class="happiness">Join us in our happiness!<br><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></p>
     <div class="tile__img">
-        <img class="tile__img" src="./assets/img/ggg.gif" alt=""  />
+        <img class="tile__img" src="./assets/img/ggg.gif" alt="" />
     </div>
     <p class="dance-med">
         dinner & dancing to follow
@@ -186,10 +186,20 @@
         </a>
     </div>
     <p class="footer">
-        Can't wait to celebrate auspicious moment of our family with you!<br>
-        <span> <a href="https://api.whatsapp.com/send?phone=919729373708&utm_source=Messaging&utm_medium=Whatsapp" target="_blank" class="social-icon" title="WhatsApp">
+        Can't wait to celebrate the auspicious moment of our family with you!<br>
+        <span><a href="https://api.whatsapp.com/send?phone=919729373708&utm_source=Messaging&utm_medium=Whatsapp" target="_blank" class="social-icon" title="WhatsApp">
         <!-- WhatsApp SVG here -->
         </a></span>
     </p>
+
+    <!-- Force reload bypassing cache -->
+    <script>
+        if (window.performance) {
+            if (performance.navigation.type == 1) {
+                console.log("This page is reloaded");
+            }
+            window.location.reload(true); // Force reload
+        }
+    </script>
 </body>
 </html>
