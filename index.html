@@ -117,9 +117,16 @@
     }
 
     .tile__img {
-      text-align: center;
-      margin: 20px 0;
-    }
+    text-align: center;
+    margin: 20px 0;
+    max-height: 200px; /* Adjust this value as needed */
+  }
+
+  .wrap {
+    /* Adjust the height if necessary */
+    min-height: 100vh;
+    max-height: 100vh; /* Add max-height to prevent overflow */
+  }
 
     .tile__img img {
       max-width: 100%; /* Ensure image scales with viewport */
